@@ -1,0 +1,14 @@
+<p>test works!</p>
+<button (click)="secret_check=!secret_check;
+                 OnClickEvent();">
+                 Display Details
+</button>
+<p *ngIf="secret_check">Secret Password = Tuna</p>
+<ul>
+    <li 
+    *ngFor="let item of clicks_log; let i = index" 
+    [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" 
+    [ngClass]="{drawing: i >= 4}">
+        {{item}}
+    </li>
+</ul>
