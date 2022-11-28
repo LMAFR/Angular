@@ -10,7 +10,9 @@ import { LogginService } from 'src/logging.service';
 export class NewAccountComponent {
 
   constructor(private logginService:LogginService, private accountsService:AccountsService){
-
+    this.accountsService.statusUpdated.subscribe(
+      (status:string) => alert('Status changed! Now is ' + status)
+    );
   }
 
   onCreateAccount(accountName: string, accountStatus: string) {
