@@ -1,6 +1,7 @@
 import { Recipe } from "./recipe.model";
 import { EventEmitter, Injectable } from '@angular/core';
 import { Ingredient } from "src/shared/ingredient.model";
+import { ShoppingListService } from "../shopping-list/shopping-list.service";
 
 @Injectable()
 export class RecipeService {
@@ -16,13 +17,19 @@ export class RecipeService {
         new Recipe('Another test recipe', 
                     'This is also a test',
                     'https://upload.wikimedia.org/wikipedia/commons/9/93/Carl%27s_Jr_Big_Burger_%2841516298835%29.jpg',
-                    [new Ingredient('Bread', 1),
+                    [new Ingredient('Buns', 2),
                      new Ingredient('Meat', 1)]
                      )
       ];
     recipeSelected = new EventEmitter<Recipe>();
+
+    constructor(private slService:ShoppingListService){ }
     
     getRecipes() {
         return this.recipes.slice();
+    }
+
+    addIngredientsToShoppingList(ingredients:Ingredient[]){
+        this.slService.addIngredients(ingredients);
     }
 }
