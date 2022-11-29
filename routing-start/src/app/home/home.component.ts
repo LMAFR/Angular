@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   onLoadServers(){
     //Add some complex calculations
-    // The ['X'] notation below is used to work with absolute paths. In either case, it would be a relative path.
+    // The slash notation below is used to work with absolute paths. Without that slash, the string would refer to a relative path whose root would be "/" by default.
     this.router.navigate(['/servers'])
   }
 }
