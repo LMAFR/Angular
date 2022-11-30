@@ -1,2 +1,5 @@
 <p>User with ID {{user.id}} loaded.</p>
 <p>User name is {{user.name}}.</p>
+<hr>
+<!-- The line below uses [routerLink] in order to pass all the parameters the route will need -->
+<a [routerLink]="['/users',10,'Anna']">Load Anna</a>
