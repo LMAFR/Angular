@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ArgumentOutOfRangeError } from "rxjs";
 import { AuthGuard } from "./auth-guard.service";
 import { ErrorPageComponent } from "./error-page/error-page.component";
 import { HomeComponent } from "./home/home.component";
@@ -33,6 +34,9 @@ const appRoutes: Routes = [
 
 @NgModule({
     imports:[
+        // The line below adds the useHash argument, which allows our page to be deployed in old browsers, as the part after "#" in the new urls will be managed 
+        // by angular, not by the server
+        // RouterModule.forRoot(appRoutes, {useHash:true})
         RouterModule.forRoot(appRoutes)
     ],
     exports:[
