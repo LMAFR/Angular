@@ -10,10 +10,10 @@
     and nabvar-collapse is cancelled (and, by default, nabvar-default replaces it. This status will not change unless we click on the toggle-nabvar again or we resize the window.) -->
         <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item active" routerLinkActive="active">
                     <a class="nav-link" href="#" routerLink="/recipes">Recipes <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" routerLinkActive="active">
                     <a class="nav-link" href="#" routerLink="/shopping-list">Shopping List <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
