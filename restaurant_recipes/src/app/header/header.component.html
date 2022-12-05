@@ -6,26 +6,26 @@
             </button>
             <a routerLink="/" class="navbar-brand">Recipe Book</a>
         </div>
-    <!-- If collapse === true, class collapse is applied and only the navbar toggle and the navbar-brand appears. If we click on the navbar-toggle, collapse becomes false
+        <!-- If collapse === true, class collapse is applied and only the navbar toggle and the navbar-brand appears. If we click on the navbar-toggle, collapse becomes false
     and nabvar-collapse is cancelled (and, by default, nabvar-default replaces it. This status will not change unless we click on the toggle-nabvar again or we resize the window.) -->
         <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
-          <ul class="nav navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List <span class="sr-only">(current)</span></a>
-              </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown" appDropdownDirective>
-                <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Save Data</a></li>
-                    <li><a href="#">Fetch Data</a></li>
-                </ul>
-            </li>
-          </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" routerLink="/recipes">Recipes <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" routerLink="/shopping-list">Shopping List <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" appDropdownDirective>
+                    <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Save Data</a></li>
+                        <li><a href="#">Fetch Data</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-  </nav>
+</nav>
