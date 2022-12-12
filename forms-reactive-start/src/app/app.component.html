@@ -5,10 +5,12 @@
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" formControlName="username" class="form-control">
+                    <span *ngIf="!signUpForm.get('username').valid && signUpForm.get('username').touched" class="help-block">Please, enter a valid name!</span>
                 </div>
                 <div class="form-group">
                     <label for="email">email</label>
                     <input type="text" id="email" formControlName="email" class="form-control">
+                    <span *ngIf="!signUpForm.get('email').valid && signUpForm.get('email').touched" class="help-block">Please, enter a valid email!</span>
                 </div>
                 <div class="radio" *ngFor="let gender of genders">
                     <label>
@@ -18,6 +20,7 @@
               [value]="gender">{{ gender }}
           </label>
                 </div>
+                <span *ngIf="!signUpForm.valid && signUpForm.touched" class="help-block">Please, enter valid data!</span>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </form>
         </div>
