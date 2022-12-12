@@ -54,5 +54,8 @@ export class AppComponent {
     this.user.secret = this.signupForm.value.secret;
     this.user.answer = this.signupForm.value.questionAnswer;
     this.user.gender = this.signupForm.value.gender;
+    // The reset option is like setValue, so specific fields can be passed as a JS object with the purpose of only resetting those fields. 
+    // Reset not only clean the fields in the form, but also reset the values in the HTML code (browser).
+    this.signupForm.reset();
   }
 }
