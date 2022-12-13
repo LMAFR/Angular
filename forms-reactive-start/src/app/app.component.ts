@@ -9,11 +9,12 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 export class AppComponent implements OnInit{
   genders = ['male', 'female'];
   signUpForm:FormGroup;
+  forbiddenUsernames = ['Chris', 'Anna'];
 
   ngOnInit() {
     this.signUpForm = new FormGroup({
       'userData': new FormGroup({
-        'username': new FormControl(null, Validators.required),
+        'username': new FormControl(null, [Validators.required, this.forbiddenNames.bind(this)]),
         'email': new FormControl(null, [Validators.required, Validators.email])
       }),
       // The first value in FormControl is the default value os that field in the form
@@ -32,5 +33,13 @@ export class AppComponent implements OnInit{
 
   getControls(){
     return (<FormArray>this.signUpForm.get('hobbies')).controls;
+  }
+
+  forbiddenNames(control:FormControl):{[s:string]:boolean} {
+    // The "!== -1" in the line below is because if the control (username) is not in the forbiddenUsernames list, then indexOf will return -1.
+    if (this.forbiddenUsernames.indexOf(control.value) !== -1){
+      return {'nameIsForbidden':true};
+    }
+    return null;
   }
 }
