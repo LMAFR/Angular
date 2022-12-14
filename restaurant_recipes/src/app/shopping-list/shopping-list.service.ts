@@ -8,6 +8,7 @@ export class ShoppingListService {
         new Ingredient('Apples', 5),
         new Ingredient('Tomatoes',10)
     ];
+    startedEditing = new Subject<number>();
 
     getIngredients(){
         // Slice is used in the line below to return a copy of the array, not the real one.

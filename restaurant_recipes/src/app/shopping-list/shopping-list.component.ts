@@ -23,6 +23,11 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
     )
   }
 
+  // The function below will pass the index of the item we want to edit to the startedEditing subject, so we can listen to it there or in other place:
+  onEditItem(index:number) {
+    this.slService.startedEditing.next(index);
+  }
+
   ngOnDestroy() {
     this.subscription.unsubscribe()
   }
