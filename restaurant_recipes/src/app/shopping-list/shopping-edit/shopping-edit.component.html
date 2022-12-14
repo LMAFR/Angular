@@ -13,7 +13,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="btn btn-success btn-separation" type="submit" [disabled]="!f.valid">Add</button>
+                    <button class="btn btn-success btn-separation" type="submit" [disabled]="!f.valid">{{editMode ? 'Update' : 'Add'}}</button>
                     <button class="btn btn-danger btn-separation" type="button">Delete</button>
                     <button class="btn btn-primary btn-separation" type="button">Clear</button>
                 </div>
