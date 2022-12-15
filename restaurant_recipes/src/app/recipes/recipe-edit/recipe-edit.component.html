@@ -3,7 +3,7 @@
         <form action="" [formGroup]="recipeForm">
             <div class="row">
                 <div class="col-xs-12">
-                    <button type="submit" class="btn btn-success" (click)="onSubmit()" style="margin:5px">Save</button>
+                    <button type="submit" class="btn btn-success" (click)="onSubmit()" style="margin:5px" [disabled]="!recipeForm.valid">Save</button>
                     <button type="cancel" class="btn btn-danger" style="margin:5px">Cancel</button>
                 </div>
             </div>
