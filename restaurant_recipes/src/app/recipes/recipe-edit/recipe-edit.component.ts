@@ -85,6 +85,8 @@ export class RecipeEditComponent implements OnInit {
     (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
   }
 
+  // We could have also added a "clear all ingredients" button by using .clear() on the formArray instead of removeAt on one of the elements of the array.
+
   onCancel(){
     this.router.navigate(['../'], {relativeTo:this.route});
   }
