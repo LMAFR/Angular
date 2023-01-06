@@ -23,7 +23,7 @@ export class PostService {
     }
 
     fetchPosts(){
-        this.http
+        return this.http
         .get<{[key:string]: Post}>
         ('https://ng-http-requests-163b0-default-rtdb.firebaseio.com/posts.json')
         .pipe(
@@ -37,10 +37,5 @@ export class PostService {
             return postsArray;
           })
         )
-        .subscribe(
-          (posts)=>{
-            // 
-          }
-        );
     }
 } 
