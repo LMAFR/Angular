@@ -38,4 +38,8 @@ export class PostService {
           })
         )
     }
+
+    deletePosts(){
+        return this.http.delete('https://ng-http-requests-163b0-default-rtdb.firebaseio.com/posts.json');
+    }
 } 
