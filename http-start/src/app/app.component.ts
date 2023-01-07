@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Post } from './post.model';
 import { PostService } from './posts.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,15 @@ export class AppComponent implements OnInit {
   loadedPosts = [];
   isFetching = false;
   error = null;
+  errorSub = new Subscription();
 
   constructor(private http: HttpClient, private postService: PostService) {}
 
   ngOnInit() {
+    this.errorSub = this.postService.error.subscribe(errorMessage => {
+      this.error = errorMessage;
+    })
+
     this.fetchPosts();
   }
 
@@ -43,4 +49,9 @@ export class AppComponent implements OnInit {
       this.error = error.message;
     });
   }
+
+  ngOnDestroy() {
+    this.errorSub.unsubscribe()
+  }
+  
 }
