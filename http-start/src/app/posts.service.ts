@@ -1,8 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Post } from "./post.model";
-import { map } from "rxjs/operators";
-import { Subject } from "rxjs";
+import { catchError, map } from "rxjs/operators";
+import { Subject, throwError } from "rxjs";
 
 @Injectable({providedIn:'root'})
 export class PostService {
@@ -17,8 +17,7 @@ export class PostService {
         this.http.post<{name:string}>(
           'https://ng-http-requests-163b0-default-rtdb.firebaseio.com/posts.json',
            postData
-           )
-           .subscribe(
+           ).subscribe(
           (responseData) => {
             console.log(postData);
           },
@@ -41,8 +40,12 @@ export class PostService {
               }
             }
             return postsArray;
+          }),
+          catchError(errorRes => {
+            // Send to analytics server
+            return throwError(errorRes);
           })
-        )
+        );
     }
 
     deletePosts(){
