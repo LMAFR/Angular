@@ -18,7 +18,8 @@ export class PostService {
           'https://ng-http-requests-163b0-default-rtdb.firebaseio.com/posts.json',
            postData,
            {
-            observe:'response'
+            observe:'response',
+            responseType:'json'
            }
            ).subscribe(
           (responseData) => {
@@ -63,9 +64,11 @@ export class PostService {
     deletePosts(){
         return this.http.delete('https://ng-http-requests-163b0-default-rtdb.firebaseio.com/posts.json',
         {
-          observe: 'events'
+          observe: 'events',
+          responseType: 'text'
         }).pipe(
           tap(event => {
+            console.log(event);
             if (event.type === HttpEventType.Sent) {
               // ...
             }
