@@ -13,6 +13,7 @@ export class AuthComponent implements OnInit {
 
   isLoginMode:boolean = false;
   isLoading:boolean = false;
+  error:string=null;
 
   ngOnInit(): void {
   }
@@ -43,6 +44,7 @@ export class AuthComponent implements OnInit {
         },
         error => {
           console.log(error);
+          this.error = 'An error occurred!';
           this.isLoading = false;
         }
       );
