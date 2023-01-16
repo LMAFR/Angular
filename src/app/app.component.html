@@ -1,0 +1,8 @@
+<div *ngIf="language === 'English'; else spanishLanguage"> 
+  <app-english></app-english>
+</div>
+<ng-template #spanishLanguage>
+   <app-spanish></app-spanish>
+</ng-template>
+
+<!-- end fullpage -->
