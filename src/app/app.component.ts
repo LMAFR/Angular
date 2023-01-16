@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
     this.language = this.languageSwitcher.getLanguage();
+    console.log(this.language);
   }
 
 }
