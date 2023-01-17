@@ -17,6 +17,11 @@ import { SocialMediaEngComponent } from './english/social-media-eng/social-media
 import { WorkExperienceEngComponent } from './english/work-experience-eng/work-experience-eng.component';
 import { FrontPageComponent } from './spanish/front-page/front-page.component';
 import { FrontPageEngComponent } from './english/front-page-eng/front-page-eng.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Angular Material
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +43,9 @@ import { FrontPageEngComponent } from './english/front-page-eng/front-page-eng.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
