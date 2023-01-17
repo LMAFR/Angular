@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarComponent } from './navbar.component';
+import { SocialMediaEngComponent } from './social-media-eng.component';
 
-describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+describe('SocialMediaEngComponent', () => {
+  let component: SocialMediaEngComponent;
+  let fixture: ComponentFixture<SocialMediaEngComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
+      declarations: [ SocialMediaEngComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavbarComponent);
+    fixture = TestBed.createComponent(SocialMediaEngComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

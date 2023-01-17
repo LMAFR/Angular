@@ -10,6 +10,11 @@ import { SkillsComponent } from './spanish/skills/skills.component';
 import { WorkExperienceComponent } from './spanish/work-experience/work-experience.component';
 import { ContactComponent } from './spanish/contact/contact.component';
 import { SocialMediaComponent } from './spanish/social-media/social-media.component';
+import { ContactEngComponent } from './english/contact-eng/contact-eng.component';
+import { NavbarEngComponent } from './english/navbar-eng/navbar-eng.component';
+import { SkillsEngComponent } from './english/skills-eng/skills-eng.component';
+import { SocialMediaEngComponent } from './english/social-media-eng/social-media-eng.component';
+import { WorkExperienceEngComponent } from './english/work-experience-eng/work-experience-eng.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { SocialMediaComponent } from './spanish/social-media/social-media.compon
     SkillsComponent,
     WorkExperienceComponent,
     ContactComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    ContactEngComponent,
+    NavbarEngComponent,
+    SkillsEngComponent,
+    SocialMediaEngComponent,
+    WorkExperienceEngComponent
   ],
   imports: [
     BrowserModule,

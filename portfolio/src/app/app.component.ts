@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { LanguageSwitcher } from 'src/shared/changeLanguage.service';
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   constructor(private languageSwitcher:LanguageSwitcher ){}
 
-  language:String = "";
+  language:string = "";
 
   ngOnInit(){
     this.language = this.languageSwitcher.getLanguage();

@@ -8,7 +8,7 @@ import { LanguageSwitcher } from 'src/shared/changeLanguage.service';
 })
 export class NavbarComponent implements OnInit {
 
-  language:String = "";
+  language:string = "";
 
   constructor(private languageSwitcher:LanguageSwitcher){}
 
