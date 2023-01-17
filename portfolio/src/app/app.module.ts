@@ -15,6 +15,8 @@ import { NavbarEngComponent } from './english/navbar-eng/navbar-eng.component';
 import { SkillsEngComponent } from './english/skills-eng/skills-eng.component';
 import { SocialMediaEngComponent } from './english/social-media-eng/social-media-eng.component';
 import { WorkExperienceEngComponent } from './english/work-experience-eng/work-experience-eng.component';
+import { FrontPageComponent } from './spanish/front-page/front-page.component';
+import { FrontPageEngComponent } from './english/front-page-eng/front-page-eng.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { WorkExperienceEngComponent } from './english/work-experience-eng/work-e
     NavbarEngComponent,
     SkillsEngComponent,
     SocialMediaEngComponent,
-    WorkExperienceEngComponent
+    WorkExperienceEngComponent,
+    FrontPageComponent,
+    FrontPageEngComponent
   ],
   imports: [
     BrowserModule,
