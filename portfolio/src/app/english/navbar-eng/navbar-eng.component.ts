@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { LanguageSwitcher } from 'src/shared/changeLanguage.service';
 
 @Component({
@@ -6,20 +6,14 @@ import { LanguageSwitcher } from 'src/shared/changeLanguage.service';
   templateUrl: './navbar-eng.component.html',
   styleUrls: ['./navbar-eng.component.css']
 })
-export class NavbarEngComponent implements OnInit {
-
-  @Output() language = new EventEmitter<string>();
+export class NavbarEngComponent{
 
   constructor(private languageSwitcher:LanguageSwitcher){}
 
-  ngOnInit(): void {
-  }
-
-  onLanguage(){
+  announceLanguageChanged(){
     this.languageSwitcher.onLanguage();
-    // this.language.emit(this.languageSwitcher.getLanguage());
+    const language = this.languageSwitcher.getLanguage();
+    this.languageSwitcher.announceChange(language);
   }
-
-
 
 }
