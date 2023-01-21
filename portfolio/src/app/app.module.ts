@@ -18,9 +18,12 @@ import { WorkExperienceEngComponent } from './english/work-experience-eng/work-e
 import { FrontPageComponent } from './spanish/front-page/front-page.component';
 import { FrontPageEngComponent } from './english/front-page-eng/front-page-eng.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 // Angular Material
 import {MatCardModule} from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EmailService } from 'src/shared/email.service';
 
 
 @NgModule({
@@ -45,7 +48,9 @@ import {MatCardModule} from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
