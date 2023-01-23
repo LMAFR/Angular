@@ -2,6 +2,16 @@ h1 {
     color: white;
     font-size: 50px;
     font-weight: bold;
+    margin-top: 320px;
+    margin-left: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p {
+    margin-left: 70px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 h1:hover {

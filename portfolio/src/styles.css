@@ -16,7 +16,7 @@ a {
 }
 
 h1 {
-    color: #ff6363;
+    color: rgb(89, 213, 178);
     font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ p {
 
 .fa-bars {
     display: none !important;
-    color: #ff6363;
+    color: rgb(89, 213, 178);
     float: right;
     padding: 20px;
     position: fixed;
@@ -106,7 +106,7 @@ p {
 }
 
 .fa-times {
-    color: #ff6363;
+    color: rgb(89, 213, 178);
     float: right;
     padding: 20px;
     right: 0;
@@ -134,7 +134,7 @@ p {
 }
 
 .header-links a:hover {
-    color: #ff6363 !important;
+    color: rgb(89, 213, 178) !important;
 }
 
 
@@ -167,7 +167,7 @@ p {
 .opaque-bg {
     margin-left: auto;
     margin-right: auto;
-    max-width: 380px;
+    max-width: 600px;
     padding: 1px 1px 5px 5px;
 }
 
@@ -196,7 +196,7 @@ p {
 /* bouncing arrow */
 
 .fa-chevron-down {
-    color: #ff6363 !important;
+    color: rgb(89, 213, 178) !important;
     bottom: 10px;
     margin-left: -30px;
     cursor: pointer;
@@ -374,12 +374,12 @@ p {
 }
 
 .fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #ff6363 !important;
+    border-color: transparent transparent transparent rgb(89, 213, 178) !important;
     right: 45px !important;
 }
 
 .fp-controlArrow.fp-prev {
-    border-color: transparent #ff6363 transparent transparent !important;
+    border-color: transparent rgb(89, 213, 178) transparent transparent !important;
     left: 45px !important;
 }
 
@@ -470,10 +470,10 @@ label {
     padding: 12px;
     min-width: 200px;
     border-radius: 2px;
-    border: 2px solid #ff6363;
+    border: 2px solid rgb(89, 213, 178);
     text-align: center;
     font-size: 1em;
-    color: #ff6363;
+    color: rgb(89, 213, 178);
     background-color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -481,7 +481,7 @@ label {
 }
 
 #submit:hover {
-    background-color: #ff6363;
+    background-color: rgb(89, 213, 178);
     color: white;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -511,7 +511,7 @@ label {
 }
 
 .social-links a:hover {
-    color: #ff6363;
+    color: rgb(89, 213, 178);
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -558,7 +558,7 @@ label {
 }
 
 .spinner>div {
-    background-color: #ff6363;
+    background-color: rgb(89, 213, 178);
     height: 100%;
     width: 6px;
     display: inline-block;
@@ -654,4 +654,25 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html {
+    filter: invert(1);
+}
+
+.front,
+.fp-controlArrow,
+.navbar,
+.aboutme {
+    filter: invert(1);
+}
+
+html p,
+h1,
+button {
+    filter: invert(1);
+}
+
+div.opaque-bg {
+    filter: invert(1);
 }
