@@ -25,20 +25,21 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
                             "@angular/material/prebuilt-themes/pink-bluegrey.css",
                             "src/assets/css/raleway.css",
                             "src/assets/css/fullPage.min.css",
                             "node_modules/font-awesome/css/font-awesome.min.css",
-                            "src/assets/css/twitter-bootstrap.min.css",
                             "src/assets/css/animate.min.css",
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
                             "src/styles.css"
+
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js",
                             "src/assets/js/wow.min.js",
-                            "src/assets/js/twitter-bootstrap.min.js",
                             "src/assets/js/fullPage.min.js",
+                            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
                             "src/assets/js/additional-features.js"
                         ]
                     },
