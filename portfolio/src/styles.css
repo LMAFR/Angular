@@ -167,7 +167,7 @@ p {
 .opaque-bg {
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 1px 1px 5px 5px;
 }
 
@@ -470,11 +470,11 @@ label {
     padding: 12px;
     min-width: 200px;
     border-radius: 2px;
-    border: 2px solid rgb(89, 213, 178);
+    border: 2px solid #0af9c9;
     text-align: center;
     font-size: 1em;
-    color: rgb(89, 213, 178);
-    background-color: white;
+    color: #0af9c9;
+    background-color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -674,5 +674,10 @@ button {
 }
 
 div.opaque-bg {
+    filter: invert(1);
+}
+
+.fa-linkedin,
+.fa-github {
     filter: invert(1);
 }

@@ -5,3 +5,8 @@ img.invert {
 .skillbar {
     filter: invert(1);
 }
+
+.skill-bar-percent {
+    font-weight: bold;
+    font-size: small;
+}
