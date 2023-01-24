@@ -77,9 +77,9 @@ h4 {
 .flip {
     position: relative;
     display: inline-block;
-    margin-right: 2px;
+    margin-left: 2%;
     margin-bottom: 1em;
-    width: 800px;
+    width: 700px;
 }
 
 .flip>.front,

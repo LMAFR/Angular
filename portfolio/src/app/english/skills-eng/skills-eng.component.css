@@ -1,3 +1,11 @@
+h1, p, .skillbar{
+    margin-left: 10%;
+}
+
+.cards {
+    width: 120%;
+}
+
 img.invert {
     filter: invert(1);
 }
@@ -10,3 +18,4 @@ img.invert {
     font-weight: bold;
     font-size: small;
 }
+

@@ -2,14 +2,24 @@ h1 {
     color: white;
     font-size: 50px;
     font-weight: bold;
-    margin-top: 700px;
-    margin-left: 100px;
+    margin-left: 10%;
     overflow: hidden;
     white-space: nowrap;
 }
 
+@media (max-width: 2000px) {
+    h1{
+        margin-top: 80%;
+    }
+  }
+  @media (max-width: 1500px) {
+    h1{
+        margin-top: 60%;
+    }
+  }
+
 p {
-    margin-left: 110px;
+    margin-left: 12%;
     overflow: hidden;
     white-space: nowrap;
 }
