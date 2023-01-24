@@ -1,35 +1,39 @@
-<!-- navbar header -->
+
 <div class="nav-header">
-    <!-- <div class="nav-brand">
-      <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png">
-    </div> -->
 
-    <i class="fa fa-bars fa-3x"></i>
-    <div class="header-links">
-        <ul>
-            <li>
-                <input type="checkbox" (click)="announceLanguageChanged()">
-                <div> Spanish</div>
-            </li>
-            <li data-menuanchor="fourthPage"><a href="#contact">CONTACTO</a></li>
-            <li data-menuanchor="thirdPage"><a href="#portfolio">EXPERIENCIA</a></li>
-            <li data-menuanchor="secondPage"><a href="#about">SOBRE MÍ</a></li>
-        </ul>
-    </div>
-</div>
-<!-- end navbar header -->
-
-<!-- sidebar slider -->
-<div class="nav-screen">
-    <i class="fa fa-times fa-3x"></i>
-    <div class="nav-container">
-        <div class="nav-links">
-            <ul id='myMenu'>
-                <li data-menuanchor="secondPage"><a href="#about">SOBRE MÍ</a></li>
-                <li data-menuanchor="thirdPage"><a href="#portfolio">EXPERIENCIA</a></li>
-                <li data-menuanchor="fourthPage"><a href="#contact">CONTACTO</a></li>
-            </ul>
+    <nav class="navbar fixed-top bg-dark navbar-dark navbar-expand-sm">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/img/Icon_hacker.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¿Hablamos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¡Conectemos!</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse order-2 dual-collapse2 w-100">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" (click)="announceLanguageChanged()">
+                        <a class="nav-link" href="#" style="width: 120%;">
+                            <img src="./assets/img/spanish_flag.png" alt="Spanish_flag"> ESPAÑOL
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+
 </div>
-<!-- end navbar slider -->

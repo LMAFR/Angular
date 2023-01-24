@@ -1,8 +1,5 @@
-<!-- navbar header -->
+
 <div class="nav-header">
-    <!-- <div class="nav-brand">
-      <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png">
-    </div> -->
 
     <nav class="navbar fixed-top bg-dark navbar-dark navbar-expand-sm">
         <!-- Navbar content -->
@@ -27,50 +24,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="navbar-collapse collapse order-2 dual-collapse2">
+            <div class="navbar-collapse collapse order-2 dual-collapse2 w-100">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Languages
-                  </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Spanish</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                        </ul>
+                    <li class="nav-item" (click)="announceLanguageChanged()">
+                        <a class="nav-link" href="#" style="width: 120%;">
+                            <img src="./assets/img/uk_flag.png" alt="UK_flag"> ENGLISH
+                        </a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
 </div>
-<!-- <i class="fa fa-bars fa-3x"></i>
-    <div class="header-links">
-        <ul>
-            <li>
-                <input type="checkbox" (click)="announceLanguageChanged()">
-                <div> English</div>
-            </li>
-            <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-            <li data-menuanchor="thirdPage"><a href="#portfolio">WORK EXPERIENCE</a></li>
-            <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-        </ul>
-    </div>
-</div>
-<!-- end navbar header -->
-
-<!-- sidebar slider (appears when the window is small)-->
-<!-- <div class="nav-screen">
-    <i class="fa fa-times fa-3x"></i>
-    <div class="nav-container">
-        <div class="nav-links">
-            <ul id='myMenu'>
-                <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-                <li data-menuanchor="thirdPage"><a href="#portfolio">WORK EXPERIENCE</a></li>
-                <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-</div> -->
-<!-- end navbar slider -->

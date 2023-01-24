@@ -9,7 +9,7 @@ import { LanguageSwitcher } from 'src/shared/changeLanguage.service';
 export class NavbarEngComponent{
 
   constructor(private languageSwitcher:LanguageSwitcher){}
-
+  
   announceLanguageChanged(){
     this.languageSwitcher.onLanguage();
     const language = this.languageSwitcher.getLanguage();
