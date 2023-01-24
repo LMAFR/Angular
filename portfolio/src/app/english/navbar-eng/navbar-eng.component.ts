@@ -16,4 +16,8 @@ export class NavbarEngComponent{
     this.languageSwitcher.announceChange(language);
   }
 
+  onDownloadResume(){
+    console.log('Resume downloaded!')
+  }
+
 }

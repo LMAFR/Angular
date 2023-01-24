@@ -8,7 +8,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">About me</a>
@@ -20,12 +20,18 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connect</a>
+                        <a class="nav-link" href="#">Connect!</a>
                     </li>
                 </ul>
             </div>
             <div class="navbar-collapse collapse order-2 dual-collapse2 w-100">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-dark btn-md" (click)="onDownloadResume()">
+                            <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                            Download CV 
+                        </button>
+                    </li>
                     <li class="nav-item" (click)="announceLanguageChanged()">
                         <a class="nav-link" href="#" style="width: 120%;">
                             <img src="./assets/img/uk_flag.png" alt="UK_flag"> ENGLISH

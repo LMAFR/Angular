@@ -23,3 +23,13 @@ nav {
     position: fixed;
     top: 0px;
 }
+
+button{
+    border-color: rgb(89, 213, 178);
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    margin-top: 9%;
+    filter: invert(1);
+}
+  
