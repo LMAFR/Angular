@@ -17,7 +17,7 @@ export class NavbarEngComponent{
   }
 
   onDownloadResume(){
-    console.log('Resume downloaded!')
+    window.open('assets/resumes/CV_Alejandro_Florido_Reyes(ENG).pdf');
   }
 
 }
