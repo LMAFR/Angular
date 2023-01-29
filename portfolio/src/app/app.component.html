@@ -1,6 +1,6 @@
-<div *ngIf="language === 'English'; else spanishLanguage">
+<ng-container *ngIf="language === 'English'; else spanishLanguage">
     <app-english></app-english>
-</div>
+</ng-container>
 <ng-template #spanishLanguage>
     <app-spanish></app-spanish>
 </ng-template>

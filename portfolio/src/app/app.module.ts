@@ -24,6 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from 'src/shared/email.service';
+import { LightSpanishComponent } from './light-spanish/light-spanish.component';
+import { LightEnglishComponent } from './light-english/light-english.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { EmailService } from 'src/shared/email.service';
     SocialMediaEngComponent,
     WorkExperienceEngComponent,
     FrontPageComponent,
-    FrontPageEngComponent
+    FrontPageEngComponent,
+    LightSpanishComponent,
+    LightEnglishComponent
   ],
   imports: [
     BrowserModule,

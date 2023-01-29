@@ -172,8 +172,8 @@ p {
 }
 
 .aboutme {
-    background: url("./assets/img/hacker.jpg") no-repeat;
-    background-size:cover;
+    background: url("./assets/img/hacker_2.jpg") no-repeat;
+    background-size: cover;
 }
 
 .aboutme p {
@@ -658,6 +658,7 @@ body {
 
 html {
     filter: invert(1);
+    scroll-behavior: smooth;
 }
 
 .front,

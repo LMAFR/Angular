@@ -1,9 +1,6 @@
-h1, p, .skillbar{
-    margin-left: 10%;
-}
-
-.cards {
-    width: 120%;
+.section {
+    height: 900px;
+    padding-top: 2%;
 }
 
 img.invert {
@@ -18,4 +15,3 @@ img.invert {
     font-weight: bold;
     font-size: small;
 }
-

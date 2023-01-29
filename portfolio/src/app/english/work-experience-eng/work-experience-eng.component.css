@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-* {
-    box-sizing: border-box;
-    font-weight: normal;
+.section {
+    height: 700px;
+    padding-top: 2%;
+    margin-bottom: 10%;
 }
 
 body {
@@ -12,7 +12,11 @@ body {
     padding: 1em;
 }
 
-h1 {
+.section h1 {
+    margin-bottom: 2%;
+}
+
+.flip h1 {
     font-size: 3.2em;
     color: black;
 }
@@ -77,9 +81,8 @@ h4 {
 .flip {
     position: relative;
     display: inline-block;
-    margin-left: 2%;
     margin-bottom: 1em;
-    width: 700px;
+    width: 1000px;
 }
 
 .flip>.front,
@@ -89,7 +92,7 @@ h4 {
     width: inherit;
     background-size: cover !important;
     background-position: center !important;
-    height: 440px;
+    height: 600px;
     padding: 1em 2em;
     background: #313131;
     border-radius: 10px;
