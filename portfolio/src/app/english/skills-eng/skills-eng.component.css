@@ -1,3 +1,82 @@
+/* Skill bar css + animation*/
+
+.skills {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.skill {
+    margin-bottom: 3%;
+}
+
+.skill-title,
+.skill-per {
+    display: flex
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin: 5px 0;
+    margin-right: 50px;
+    transform: translateY(100%) translateX(2%)
+}
+
+.skill-bar {
+    height: 20px;
+    background: #282828;
+    border-radius: 3px;
+    margin-left: 100px;
+    margin-bottom: -30px;
+}
+
+.skill-per {
+    height: 20px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -3px;
+    right: -20px;
+    transform: translateX(50%);
+    color: white;
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Other actions */
+
 .section {
     height: 900px;
     padding-top: 2%;
@@ -5,13 +84,4 @@
 
 img.invert {
     filter: invert(1);
-}
-
-.skillbar {
-    filter: invert(1);
-}
-
-.skill-bar-percent {
-    font-weight: bold;
-    font-size: small;
 }
