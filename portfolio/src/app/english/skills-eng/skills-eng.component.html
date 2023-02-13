@@ -10,7 +10,7 @@
                 <div class="skill-title"><span> HTML5</span></div>
                 <!-- <object data="./assets/img/html5.svg" width="20px" height="20px" style="margin-top: 10px;"></object> -->
                 <div class="skill-bar">
-                    <div class="skill-per" per="90%" style="max-width: 90%;background: #22abe1;"></div>
+                    <div @skillBarGrowth *ngIf="isShown" class="skill-per" per="90%" style="max-width: 90%;background: #22abe1;"></div>
                 </div>
             </div>
             <!-- End Skill Bar -->
