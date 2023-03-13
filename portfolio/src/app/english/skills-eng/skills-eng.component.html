@@ -8,51 +8,17 @@
 
         <h1 class="wow fadeInDown " data-wow-delay="0.4s ">Programming Languages</h1>
         <br>
-        <div class="wow fadeInDown cards" data-wow-delay="0.4s " style="display: flex; ">
-            <mat-card style="max-width: 200px; max-height: 250px; background-color: transparent; margin-right: 10px; ">
+        <div class="wow fadeInDown cards" data-wow-delay="0.4s " style="display:flex;">
+            <mat-card *ngFor="let skill of skills" style="flex:25%; max-width: 200px; max-height: 250px; background-color: transparent; margin-right: 10px; ">
                 <mat-card-header style="margin-left: auto;margin-right: auto; ">
-                    <mat-card-title>Python</mat-card-title>
-                    <mat-card-subtitle style="color: #797c7b; ">Expert</mat-card-subtitle>
+                    <mat-card-title>{{skill.language}}</mat-card-title>
+                    <mat-card-subtitle style="color: #797c7b; ">{{skill.lvl}}</mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image class="invert" src="./assets/img/python_logo.svg " alt="Python Logo " style="max-width: 100px; max-height: 100px; margin-left: auto; margin-right:auto; ">
+                <img mat-card-image [ngClass]="skill.language !== 'Rust' ? 'invert' : '' " src={{skill.imgPath}} alt={{skill.imgAlt}} style="max-width: 100px; max-height: 100px; margin-left: auto; margin-right:auto; ">
                 <mat-card-content>
-                    <p style="font-size: 15px; ">Pandas, Numpy, Seaborn, Scikit-Learn, Pytest, etc.</p>
+                    <p style="font-size: 15px; ">{{skill.info}}</p>
                 </mat-card-content>
             </mat-card>
-
-            <mat-card style="max-width: 200px; max-height: 250px; background-color: transparent; margin-right: 10px; ">
-                <mat-card-header style="margin-left: auto;margin-right: auto; ">
-                    <mat-card-title>JavaScript</mat-card-title>
-                    <mat-card-subtitle style="color: #797c7b; ">Intermediate</mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image class="invert" src="./assets/img/JavaScript-logo.png " alt="JavaScript Logo " style="padding: 10px; max-width: 100px; max-height: 100px; margin-left: auto; margin-right:auto; ">
-                <mat-card-content>
-                    <p style="font-size: 15px; ">Includes TypeScript. Mostly Angular, learning React.</p>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card style="max-width: 200px; max-height: 250px; background-color: transparent; margin-right: 10px; ">
-                <mat-card-header style="margin-left: auto;margin-right: auto; ">
-                    <mat-card-title>SQL</mat-card-title>
-                    <mat-card-subtitle style="color: #797c7b; ">Intermediate</mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image class="invert" src="./assets/img/sql-logo.png " alt="SQL Logo " style="padding:5px; max-width: 100px; max-height: 100px; margin-left: auto; margin-right:auto; ">
-                <mat-card-content>
-                    <p style="font-size: 15px; ">Expert in ETLs. Beginner in Database management.</p>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card style="max-width: 200px; max-height: 250px; background-color: transparent; margin-right: 10px; ">
-                <mat-card-header style="margin-left: auto;margin-right: auto; ">
-                    <mat-card-title>Rust</mat-card-title>
-                    <mat-card-subtitle style="color: #797c7b; ">Beginner</mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image src="./assets/img/Rust_logo.png " alt="Rust Logo " style="padding:5px; max-width: 100px; max-height: 100px; margin-left: auto; margin-right:auto; cursor: pointer;" (click)="onRustRepository() ">
-                <mat-card-content>
-                    <p style="font-size: 15px; ">First Steps course by Microsoft. I am looking forward to learn more!</p>
-                </mat-card-content>
-            </mat-card>
-
         </div>
         <br>
         <h1 class="wow fadeInDown " data-wow-delay="0.4s ">Projects</h1>

@@ -33,6 +33,37 @@ export class SkillsEngComponent {
   //   }
   // }
 
+  skills = [
+    {
+      language: 'Python',
+      lvl: 'Expert',
+      info: 'Pandas, Numpy, Seaborn, Scikit-Learn, Pytest, etc.',
+      imgPath: './assets/img/python_logo.svg',
+      imgAlt: 'Python Logo'
+    },
+    {
+      language: 'JavaScript',
+      lvl: 'Intermediate',
+      info: 'Includes TypeScript. Mostly Angular, learning React.',
+      imgPath: './assets/img/JavaScript-logo.png',
+      imgAlt: 'JavaScript Logo'
+    },
+    {
+      language: 'SQL',
+      lvl: 'Intermediate',
+      info: 'Expert in ETLs. Beginner in Database management.',
+      imgPath: './assets/img/sql-logo.png',
+      imgAlt: 'SQL Logo'
+    },
+    {
+      language: 'Rust',
+      lvl: 'Beginner',
+      info: 'First Steps course by Microsoft. I am looking forward to learn more!',
+      imgPath: './assets/img/Rust_logo.png',
+      imgAlt: 'Rust Logo'
+    }
+  ]
+
   all_projects = 
   [
     {
