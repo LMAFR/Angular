@@ -55,8 +55,23 @@
 
         </div>
         <br>
-        <p class="wow fadeInDown" data-wow-delay="0.4s">More projects will be added in the future but, for example, this website has been built using Angular and Django.</p>
-
+        <h1 class="wow fadeInDown " data-wow-delay="0.4s ">Projects</h1>
+        <div style="border: white 1px solid; border-radius: 10px; margin-bottom: 500px;">
+            <mat-tab-group [color]="'primary'" mat-align-tabs="end" style="background-color: rgb(124, 124, 124); border-radius: 10px">
+                <ng-container *ngFor="let skill of all_projects">
+                    <mat-tab label={{skill.skill}}>
+                        <ul *ngFor="let project of skill.projects">
+                            <li style="text-align: justify; margin-top: 1%;">
+                                <mat-icon style="vertical-align: middle;">check_circle</mat-icon>
+                                <a href={{project.repository}} style="vertical-align: middle; color: #d13639;">
+                                    {{project.title}}
+                                </a>
+                            </li>
+                        </ul>
+                    </mat-tab>
+                </ng-container>
+            </mat-tab-group>
+        </div>
     </div>
 </div>
 <!-- end section -->

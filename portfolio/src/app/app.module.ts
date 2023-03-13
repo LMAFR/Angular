@@ -22,10 +22,12 @@ import {HttpClientModule} from '@angular/common/http';
 
 // Angular Material
 import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs'
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from 'src/shared/email.service';
 import { LightSpanishComponent } from './light-spanish/light-spanish.component';
 import { LightEnglishComponent } from './light-english/light-english.component';
+import {MatIconModule} from '@angular/material/icon'
 
 
 @NgModule({
@@ -53,8 +55,10 @@ import { LightEnglishComponent } from './light-english/light-english.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatTabsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
