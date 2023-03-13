@@ -46,18 +46,20 @@ button:hover {
     transition: all 0.6s ease-in-out;
 }
 
-.topBotomBordersOut {
+
+/* .topBotomBordersOut {
     border-radius: 5px;
-    transition: all .5s;
+    transition: all .3s;
     transform-origin: left;
     position: relative;
     transition: 200ms ease;
-}
+} */
 
 
 /* Top and Bottom borders go out */
 
-.topBotomBordersOut:before,
+
+/* .topBotomBordersOut:before,
 .topBotomBordersOut:after {
     position: absolute;
     left: 0px;
@@ -83,4 +85,4 @@ button:hover {
 .topBotomBordersOut:hover:after {
     opacity: 1;
     transform: translateY(0px);
-}
+} */
